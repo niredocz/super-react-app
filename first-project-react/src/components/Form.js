@@ -5,10 +5,13 @@ const Form = ({setInputText}) => {
     const inputTextHandler = (e) => {
         setInputText(e.target.value);
     };
+    const submitTodoHandler = (e) => {
+        e.preventDevault();
+    }
     return(
         <form>
             <input onChange={inputTextHandler} type="text" name="input-list" id="input-list"/>
-            <button className="todo-button" type="submit">
+            <button onClick={submitTodoHandler} className="todo-button" type="submit">
             <i className="fas fa-plus-square"></i>
             </button>
             <div className="select">
