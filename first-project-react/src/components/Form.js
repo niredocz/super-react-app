@@ -8,6 +8,8 @@ const Form = ({setInputText}) => {
     const submitTodoHandler = (e) => {
         e.preventDevault();
     }
+
+    
     return(
         <form>
             <input onChange={inputTextHandler} type="text" name="input-list" id="input-list"/>
