@@ -1,9 +1,12 @@
-import './App.css';
+import React from 'react';
+import './assets/css/App.css';
 
-export default function App() {
+function App() {
   return (
     <div className="App">
-      <h1>Hello React</h1>     
+      <input type="text"/>
     </div>
   );
 }
+
+export default App;
