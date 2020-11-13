@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Form = ({setInputText}) => {
+const Form = ({setInputText, todos, setTodos}) => {
     // Write JS and Function
     const inputTextHandler = (e) => {
         setInputText(e.target.value);
@@ -8,8 +8,6 @@ const Form = ({setInputText}) => {
     const submitTodoHandler = (e) => {
         e.preventDevault();
     }
-
-    
     return(
         <form>
             <input onChange={inputTextHandler} type="text" name="input-list" id="input-list"/>
